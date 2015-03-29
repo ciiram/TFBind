@@ -1,7 +1,7 @@
 OVERVIEW
 ========
 
-This folder contains Python code used to determine significant transcription factor (TF) binding in regions around the transcription start sites (TSS) of genes in particular clusters. The program works by finding the proportion of all genes with TF binding in a region surrounding a TSS and determining if the number of genes with TF binding in a particular is significantly larger than would be expected by chance.
+This folder contains Python code used to determine significant transcription factor (TF) binding in regions around the transcription start sites (TSS) of genes in particular clusters. The program works by finding the proportion of all genes with TF binding in a region surrounding a TSS and determining if the number of genes with TF binding in a particular cluster is significantly larger than would be expected by chance.
 
 
 REQUIREMENTS
