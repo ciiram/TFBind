@@ -14,7 +14,7 @@ The programs require Python 2.7 or later and the following python libraries
 3. os
 4. string
 
-Also  intersectBed from BEDtools must be installed.
+Also  intersectBed from BEDtools must be installed. Follow these [installation instructions](http://bedtools.readthedocs.org/en/latest/content/installation.html).
 
 INSTALLATION
 ============
@@ -66,5 +66,30 @@ To reproduce the analysis in the paper shown in table 9 for ERalpha follow the f
 Run the analysis by typing 
 
 	python TFbind.py allGenes.txt 20000 12 Human_MCF-7_ESR1_17b-E2-1hr_Stunnenberg.bed 0.05
+
+
+The output on the command line is 
+
+	Generating BED file for all genes...
+	Done generating BED file.
+	Generating BED file for individual clusters...
+	Done generating cluster BED files.
+	Determining cluster binding proportions and significance...
+	1 27 0.000454
+	2 31 0.002659
+	3 11 0.12291
+	4 20 0.007266
+	5 15 0.173521
+	6 27 0.002978
+	7 10 0.691283
+	8 32 0.001042
+	9 18 0.010105
+	10 30 1.9e-05
+	11 5 0.765658
+	12 19 0.258238
+	Done!
+
+For each of the twelve clusters, we get the number of genes with TF binding sites near the TSS and the corresponding p-value. 
+
 
 	
