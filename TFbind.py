@@ -170,6 +170,7 @@ for i in range(0,num_clust):
 		if len(s1)==0:
 			break
 		genes_clust.append(s1[0])
+	file1.close()
 
 	cmd="intersectBed -a LocalBeds/Cluster_"+str(i+1)+"_Interval.bed -c -b "+sys.argv[4]+" > LocalBeds/Cluster_"+str(i+1)+"_Interval2.bed"
 	os.system(cmd)
@@ -200,7 +201,5 @@ print 'Done!'
 
 
 
-np.savetxt('pval_prop_'+str(interval)+'.txt',pval_prop)
-np.savetxt('prop_'+str(interval)+'.txt',prop)
 
 
