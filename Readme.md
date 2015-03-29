@@ -47,7 +47,7 @@ where
 
 	1) gene_file:  A list of all genes in the genome
 	2) Interval: The region around the TSS to consider in base pairs
-	3) num\_clust: The number of clusters. There must be a corresponding file in Clusters/cluster\_X.txt (where X runs from 1 to num_clust) which lists genes in the cluster. 
+	3) num_clust: The number of clusters. There must be a corresponding file in Clusters/cluster_X.txt (where X runs from 1 to num_clust) which lists genes in the cluster. 
 	4) bedfile: A bedfile which contains the TF binding sites
 	5) p-value: The level of significance say 0.05
 
