@@ -1,7 +1,8 @@
 OVERVIEW
 ========
 
-This folder contains Python code used to determine significant transcription factor (TF) binding in regions around the transcription start sites (TSS) of genes in particular clusters. The program works by finding the proportion of all genes with TF binding in a region surrounding a TSS and determining if the number of genes with TF binding in a particular cluster is significantly larger than would be expected by chance.
+This folder contains Python code used to determine significant transcription factor (TF) binding in regions around the transcription start sites (TSS) of genes in particular clusters. The program works by finding the proportion of all genes with TF binding in a region surrounding a TSS and determining if the number of genes with TF binding in a particular cluster is significantly larger than would be expected by chance. This script was used to produce results in the paper “Inference of RNA Polymerase II Transcription Dynamics from Chromatin Immunoprecipitation Time Course Data,” 
+by Ciira wa Maina et al. published in [PLOS Computational Biology](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003598).
 
 
 REQUIREMENTS
@@ -29,8 +30,9 @@ In the same folder include the following subfolders
 
 In the same folder include the following files
 
-1. refGene.txt, this is the refseq file corresponding  to the genome used in the study. For example if using hg_19 download it here
+1. refGene.txt, this is the refseq file corresponding  to the genome used in the study. For example if using hg_19 download it [here](http://hgdownload.cse.ucsc.edu/goldenpath/hg19/database/refGene.txt.gz)
 2. The bedfile with the binding sites
+3. A list of genes (allGenes.txt is included here for human genes)
 
 
 To run the program open an Ipython shell and type
@@ -55,10 +57,10 @@ where
 EXAMPLE
 =======
 
-To reproduce the analysis in the paper shown in table for ERalpha follow the following steps:
+To reproduce the analysis in the paper shown in table 9 for ERalpha follow the following steps:
 
 1. Download the binding sites from the cistrome database [here](http://cistrome.org/NR_Cistrome/Cistrome/ChIP_seq/Human_ER_seq/Human_MCF-7_PolII_17b-E2-1hr_Stunnenberg.bed)
-2. Download the cluster files included as supplementary material in the paper [here]
+2. Download the cluster files included in the Cluster folder in this repository.
 
 
 Run the analysis by typing 
